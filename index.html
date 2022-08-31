@@ -1,0 +1,278 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Drew Peifer</title>
+	<meta name="description" content="Description">
+	<meta name="author" content="drewpeifer">
+	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="banner">
+			<h1>DREW PEIFER</h1>
+			<h2>UI/UX Developer + Technical Analyst</h2>
+		</div>
+		<div class="contact">
+			<a  target="_blank"
+			title="Github"
+			class="github"
+			href="https://github.com/Drewpeifer"></a>
+			<a  target="_blank"
+			title="LinkedIn"
+			class="linkedin"
+			href="http://www.linkedin.com/in/drewpeifer"></a>
+			<a	class="mail"
+			title="Mail: drew@drewpeifer.com"
+			href="mailto:drew@drewpeifer.com"></a>
+			<a	target="_blank"
+			title="Resume / CV"
+			class="resume"
+			href="img/Drew_Peifer_Resume_2022.pdf"></a>
+			<a
+				class="aws-badge"
+				href="https://www.credly.com/badges/747ee852-08ee-4970-b92c-d8e70a35cf55"
+				target="_blank"
+				title="AWS Certification Badge">
+				<img src="img/AWS-CloudPractitioner-2020.png" width="60" height="60" />
+			</a>
+		</div>
+		<div class="content">
+			<div class="controls">
+				<ul>
+					<li class="apod">Vue3 APOD Search</li>
+					<li class="aws">AWS Dashboards</li>
+					<li class="medialytics">Medialytics</li>
+					<li class="data-vis">Data Vis Libraries</li>
+					<li class="vr-solar">3D/VR Solar System</li>
+					<li class="spacetrade">SpaceTrade</li>
+				</ul>
+			</div>
+			<div class="portal">
+				<div class="default visible">
+					<br />
+					<br />
+					<p>Welcome!</p>
+					<p>Curious about what I can do? Click the tabs above this section to view live demos and code examples.</p>
+				</div>
+				<div class="aws">
+					<div class="links">
+						<p>
+							<a target="_blank" href="img/aws-quicksight-dash1.pdf">Download this dashboard</a> as a PDF
+						</p>
+						<p class="tech">Technologies used:
+							<a target="_blank" href="https://aws.amazon.com/s3/">AWS S3</a> /
+							<a target="_blank" href="https://aws.amazon.com/glue/">Glue</a> /
+							<a target="_blank" href="https://aws.amazon.com/quickight/">Quicksight</a>
+						</p>
+					</div>
+					<p>
+						I'm an <a href="https://www.credly.com/badges/747ee852-08ee-4970-b92c-d8e70a35cf55" target="_blank">AWS Certified Cloud Practitioner</a> and I have become a big fan of the dashboards you can create using their suite of data tools.
+					</p>
+					<label>
+						<input type="checkbox">
+						<img class="qs-cap" src="img/QSdash1.PNG" />
+					</label>
+					<p>
+						To create an interactive dashboard like the one in these screenshots, all you need is a data source and a free AWS account.
+						For this particular dashboard, I started by downloading a free data dump (CSV) of
+						<a href="https://www.kaggle.com/codebreaker619/congress-on-social-media-201520" target="_blank">
+							US Congressional Member Social Media Statistics from 2015 through 2020
+						</a>.
+					</p>
+					<label>
+						<input type="checkbox">
+						<img class="qs-cap" src="img/QSdash2.PNG" />
+					</label>
+					<p>
+						The data and its values weren't in the ideal format(s) for the
+						<a href="https://aws.amazon.com/quicksight/" target="_blank">AWS Quicksight</a> visualization tools,
+						so I chose to host the CSV on <a href="https://aws.amazon.com/s3/" target="_blank">AWS S3</a>. This allowed me to
+						leverage <a href="https://aws.amazon.com/glue/" target="_blank">AWS Glue</a> for ETL calculations, and the transformed data was then
+						imported as a Quicksight dataset. For the analysis, I chose to highlight comparisons in count of posts, followers, shares, and reactions,
+						and I think the resulting dashboard displays some interesting trends and patterns.
+					</p>
+				</div>
+				<div class="apod">
+					<div class="links">
+						<p>
+							<a target="_blank" href="https://drewpeifer-apod.netlify.app">Try the live demo</a> or
+							<a target="_blank" href="https://github.com/Drewpeifer/apod-vue">check out the code</a>
+						</p>
+						<p class="tech">Technologies used:
+							<a target="_blank" href="https://vuejs.org/">VueJS</a>,
+							<a target="_blank" href="https://tailwindcss.com/">TailwindCSS</a>,
+							<a target="_blank" href="https://jqueryui.com/">jQueryUI</a>,
+							<a target="_blank" href="https://www.netlify.com/">Netlify</a>
+						</p>
+					</div>
+					<p>
+						This is a single page application powered by VueJS (Vue3) that allows you to search
+						for the official NASA
+						<a target="_blank" href="https://apod.nasa.gov/apod/astropix.html">
+							Astronomy Picture of the Day
+						</a>
+						via their free API.
+					</p>
+					<label>
+						<input type="checkbox">
+						<img src="img/screencap_apod.png" />
+					</label>
+					<p>
+						I recently rebuilt this project using Vue3 and the live demo is
+						hosted via Netlify. While I still find large frontend frameworks like Vue / React / Angular
+						to be slightly overkill for projects like this, I took it as an opportunity to work through
+						the most recent Vue documentation and "best-practice" posts.
+					</p>
+					<p>
+						I also took this opportunity to check out TailwindCSS, a library I had never worked with before.
+						As a frontend engineer, I can see the benefit of using TailwindCSS for rapid prototyping and (sparingly)
+						within design systems or component libraries. However, there are certain limitations, learning curves,
+						and the ever-present HTML bloat to consider. I think I still prefer custom CSS/SCSS (and I may be biased),
+						but I might start leveraging Tailwind in the early stages of a project.
+					</p>
+					<p>
+						I also have an older jQuery-only version available at the following links:
+						<a href="http://www.drewpeifer.com/demo/apod-engine" target="_blank">Demo</a> /
+						<a href="http://github.com/Drewpeifer/demo/tree/master/apod-engine" target="_blank">Code</a>
+					</p>
+				</div>
+				<div class="medialytics">
+					<div class="links">
+						<p>
+							<a target="_blank" href="https://github.com/Drewpeifer/medialytics">Check out the code</a>
+						</p>
+						<p class="tech">Technologies used:
+							<a href="https://jquery.com/" target="_blank">jQuery</a>,
+							<a href="https://d3js.org/" target="_blank">D3.js</a>,
+							<a href="https://ricostacruz.com/jquery.transit/" target="_blank">transit.js</a>
+						</p>
+					</div>
+					<p>
+						Medialytics is a single page app that shows you information about the content
+						on your Plex server by parsing the XML feed that it generates.
+					</p>
+					<label>
+						<input type="checkbox">
+						<img src="img/screencap_medialytics.png" />
+					</label>
+					<p>
+						If you have a hard drive full of media, you can download <a href="http://www.plex.tv/" target="_blank">Plex Media Server</a>
+						(for free) to organize, watch, and/or share your media with friends. It comes with great diagnostic tools
+						that tell you all about your server, e.g. who's watching what media, or which media gets watched the most.
+						Unfortunately, it doesn't give you much information <i>about your personal library of media</i>, such as "Which genre holds the most movies in your collection?". That's where
+						<a target="_blank" href="https://github.com/Drewpeifer/medialytics">Medialytics</a> comes in.
+					</p>
+					<p>
+						Instead of analyzing your server and its activity, Medialytics reports on your <i>media library</i> itself.
+						There are some nifty charts that explore metrics like studio, genre, and decade, plus aggregate library counts / durations. The big button at the bottom lets you view your content in an easy-to-browse mobile-friendly format, something that is not so easily done on most Plex clients.
+					</p>
+				</div>
+				<div class="data-vis">
+					<div class="links">
+						<p class="links">
+							<a target="_blank" href="http://www.drewpeifer.com/demo/data-visualization">Try the live demo</a> or
+							<a target="_blank" href="http://github.com/Drewpeifer/demo/tree/master/data-visualization">check out the code</a>
+						</p>
+						<p class="tech">Technologies used:
+							<a target="_blank" href="https://vuejs.org/">VueJS</a>,
+							<a href="https://d3js.org/" target="_blank">D3.js</a>,
+							<a href="https://www.chartjs.org/" target="_blank">Chart.js</a>
+						</p>
+					</div>
+					<p>
+						This is a single page demo that includes multiple examples of data visualization
+						frameworks, including VueJS, D3.js, and Chart.js.
+					</p>
+					<label>
+						<input type="checkbox">
+						<img class="data-cap" src="img/screencap_data3.png" />
+					</label>
+					<p>
+						I also have a write-up about what it's like to develop with each framework, and their strengths / weaknesses.
+						Vue is not usually referenced as a data-visualization framework (and has recently
+						become synonymous with Angular and React), but the lightweight client-side version of Vue
+						makes binding static data to a dynamic UI fast and easy.
+					</p>
+					<label>
+						<input type="checkbox">
+						<img class="data-cap" src="img/screencap_data.png" />
+					</label>
+					<label>
+						<input type="checkbox">
+						<img class="data-cap" src="img/screencap_data2.png" />
+					</label>
+				</div>
+				<div class="vr-solar">
+					<div class="links">
+						<p class="links">
+							<a target="_blank" href="http://www.drewpeifer.com/demo/vr-solar">Try the live demo</a> or
+							<a target="_blank" href="https://github.com/Drewpeifer/demo/tree/master/vr-solar">check out the code</a>
+						</p>
+						<p class="tech">Technologies used:
+							<a href="https://aframe.io/" target="_blank">A-Frame</a>
+						</p>
+					</div>
+					<p>This is a simple implementation of A-Frame, a client-side JS-based 3D/VR framework.</p>
+					<label>
+						<input type="checkbox">
+						<img src="img/screencap_vr-solar.png" />
+					</label>
+					<p>
+						It's specifically designed to work easily with VR integration, or just simple 3D web applications,
+						by providing a library of simple constructors and behavior that are more commonly reserved for desktop
+						software / engines (e.g. lightbox effects or spacial geometry).
+					</p>
+					<p>
+						This demo creates a (scaled) representation of our solar system, <b>including Pluto</b>. I have comments in the code describing how and why I modified certain variables in order to create a realistic but also navigable scene. While it's definitely notable that the A-Frame code is so easily initialized (I had this up and running super fast), it's also worth noting that it's a very small amount of code that generates the entire scene (less than 200 lines of JS + JSON combined).
+					</p>
+				</div>
+				<div class="spacetrade">
+					<div class="links">
+						<p class="links">
+							<a target="_blank" href="http://www.drewpeifer.com/demo/spacetrade">Try the live demo</a> or
+							<a target="_blank" href="https://github.com/Drewpeifer/demo/tree/master/spacetrade">check out the code</a>
+						</p>
+						<p class="tech">Technologies used:
+							<a href="https://jquery.com/" target="_blank">jQuery</a>,
+							<a href="https://vuejs.org/" target="_blank">Vue.js</a>,
+							<a href="https://ricostacruz.com/jquery.transit/" target="_blank">transit.js</a>
+						</p>
+					</div>
+					<p>
+						A small JavaScript game similar to <i>Dope Wars</i> and other
+						resource management games, but also includes a randomized encounter
+						system, a Choose-Your-Own-Adventure mechanic, and some
+						experimental UI elements.
+					</p>
+					<label>
+						<input type="checkbox">
+						<img src="img/screencap_spacetrade.png" />
+					</label>
+					<p>
+						It was recently updated to use the awesome
+						<a target="_blank" href="https://vuejs.org/">
+							Vue.js
+						</a>
+						for binding the frontend to the backend (which required a ground-up
+						re-write) and I think the code benefited enormously
+						from the addition.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
